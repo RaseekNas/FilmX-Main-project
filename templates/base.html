@@ -48,7 +48,6 @@
                             {% if user.cinema.role == 'cinema_manager' %}
                             <a class="dropdown-item" href="{% url 'dashboard' %}"> <i class="fa fa-edit"></i> Dashboard</a>
                             {% else %}
-                            <a class="dropdown-item" href="{% url 'profile' %}"> <i class="fa fa-edit"></i> Profile</a>
                             <a class="dropdown-item" href="{% url 'bookings' %}"> <i class="fa fa-ticket"></i> Bookings</a>
                             {% endif %}
                             <a class="dropdown-item" href="{% url 'logout' %}"><i class="fa fa-sign-out"></i> Logout</a>
